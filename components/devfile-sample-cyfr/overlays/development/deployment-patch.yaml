@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-cyfr
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr714-0075-0048-tenant/tkrw-pr714-0075-0048-app/devfile-sample-cyfr@sha256:6c8b9d6992b5c6555ef19a7622314fc9d5f5c737b0a229b90ba55671a11616bb
+        name: my-nodejs
+        resources: {}
+status: {}
